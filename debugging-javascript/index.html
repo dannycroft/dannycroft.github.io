@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    
+    <title>Debugging JavaScript using Firebug – An alternative to alert(); </title>
+    <meta name="description" content="Debugging JavaScript using Firebug – An alternative to alert();">
+    
+    <meta name="handheldfriendly" content="true" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="shortcut icon" href="https://www.dannycroft.co.uk/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="https://www.dannycroft.co.uk/img/favicon.ico" type="image/x-icon">
+    <link rel="canonical" href="https://www.dannycroft.co.uk/debugging-javascript/" />
+    
+    <meta name="generator" content="Hugo 0.25.1" />
+    <meta name="google-site-verification" content="MblxogWb_KJhQFAkYEFB7AtAzm1yFCHHo_xwN7ucy0s" />
+    <link rel="stylesheet" href="https://www.dannycroft.co.uk/css/style.css" />
+</head>
+
+
+<body>
+  <aside class="hire-status">
+  <p>Status:
+    <a title="Currently not available" href="#">Unavailable for hire</a>
+  </p>
+</aside>
+
+
+  
+
+  
+  <header id="site-head-inner" style="background-image: url(https://www.dannycroft.co.uk/img/10333422.jpg)">
+    <div class="vertical">
+      <div id="site-head-content" class="inner">
+        <h1 class="blog-title"><a href="https://www.dannycroft.co.uk/">Danny Croft</a></h1>
+      </div>
+    </div>
+  </header>
+  
+
+  <main class="content" role="main">
+ 
+<article class="post-template post" itemscope="" itemtype="http://schema.org/BlogPosting">
+  <div class="inner">
+    <span class="post-meta">
+        <strong>Date: </strong>
+        <time class="post-date" datetime="2010-09-28T16:22:30Z">
+            Sep 28, 2010
+          </time>
+      </span>
+    <h1 class="post-title" itemprop="name headline">Debugging JavaScript using Firebug – An alternative to alert();</h1>
+    <section class="post-content" itemprop="articleBody">
+      <p>So as you may already know, <a href="http://bit.ly/90kkXo" title="Firebug">Firebug</a> must be one of the most important tools a developer can have in their utility belt.</p>
+
+<p>The more I use Firebug, the more I realise that I&rsquo;m not using it to its full potential. One of the most useful aspects of Firebug  is its ability to help me debug code fast.</p>
+
+<p>It&rsquo;s amazing how many developers out there have <a href="http://bit.ly/90kkXo" title="Firebug">Firebug</a> installed, but when debugging JavaScript always resort to using the alert(); function.</p>
+
+<p>Well if your one those developers, then you need to stop littering your code with //alert(foo); and start using console.log()!</p>
+
+<p>As you can see, console.log() does exactly what it says on the tin, it logs content to the console.</p>
+
+<p>So if we ran the following  in our page:</p>
+
+<script src="https://gist.github.com/1431146.js"> </script>
+
+<p>Then opened up Firebug (Firefox) to view the Console, you would be able to see &ldquo;Now this is debugging in style!&rdquo;.</p>
+
+<p><img src="/assets/images/basic-log.png" alt="" /></p>
+
+<p>Now that may seem a bit pointless at first (hopefully not), but swap the showy string for a variable like so:</p>
+
+<script src="https://gist.github.com/1431155.js"> </script>
+
+<p>And the whole worlds your oyster right?</p>
+
+<p>Some other cool and equally handy items to remember are that your not bogged down to just using the console.log().</p>
+
+<p>There&rsquo;s a whole range of expressions you can use to increase the significance of your log. Lets take the above example and implement these:</p>
+
+<script src="https://gist.github.com/1431160.js"> </script>
+
+<p>Here we have the following:</p>
+
+<p><img src="/assets/images/range-logs.png" alt="" /></p>
+
+<p><strong>console.log();</strong></p>
+
+<p>A log in its most basic form, neither an error or a warning. The
+basic log is the only one that doesn&rsquo;t supply a hyperlink to the line that your debugging.</p>
+
+<p><strong>console.debug();</strong></p>
+
+<p>Using debug is the same as using log, except your log will also include a hyperlink to the line of code you are debugging.</p>
+
+<p><strong>console.info();</strong></p>
+
+<p>Using info will put a blue information icon next to your log with in the console.</p>
+
+<p><strong>console.warn();</strong></p>
+
+<p>Using warn will add a yellow warning icon next to your log with in the console.</p>
+
+<p><strong>console.error();</strong></p>
+
+<p>Using error will add a red error icon next to your log with in the console.</p>
+
+<p>###Pushing the log even further!</p>
+
+<p><strong>String Arguments</strong></p>
+
+<script src="https://gist.github.com/1431163.js"> </script>
+
+<p><img src="/assets/images/range-strings.png" alt="" /></p>
+
+<p>Things to remember when using string arguments with in the log are:</p>
+
+<p><strong>%s</strong> - String</p>
+
+<p><strong>%d, %i</strong> - Integer (numeric formatting is not yet supported)</p>
+
+<p><strong>%f</strong> - Floating point number (numeric formatting is not yet supported)</p>
+
+<p><strong>%o</strong> - Object hyperlink</p>
+
+<p><strong>Troubleshooting console is not defined</strong></p>
+
+<p>You may need to check that the console is enabled:</p>
+
+<p><img src="/assets/images/troubleshoot.png" alt="Troubleshooting" /></p>
+
+<p>If it is enabled and your still getting the error then try adding:</p>
+
+<script src="https://gist.github.com/1431164.js"> </script>
+
+<p>To the top of your JavaScript.</p>
+
+<p><img src="/assets/images/troubleshoot2.png" alt="Troubleshooting" /></p>
+
+<p>And if that still doesn&rsquo;t work then you may need to relaunch
+Firefox. I know that sounds like the old  I.T. &ldquo;Have you tried rebooting?&rdquo; get out clause, but sometimes it sorts my Firefox issues out as a last resort.</p>
+
+<p><strong>Reference Article</strong>
+- Firebug API Wiki :<a href="http://bit.ly/aWZ2h2"> http://bit.ly/aWZ2h2</a></p>
+
+<p><strong>Related Links</strong></p>
+
+<ul>
+<li>Dowload Firebug: <a href="http://bit.ly/awpizE">http://bit.ly/awpizE</a></li>
+<li>Download Extentsions for FireBug: <a href="http://bit.ly/aV5k1r">http://bit.ly/aV5k1r</a></li>
+<li>Download Firebug Swarm: <a href="http://bit.ly/9AkjLC">http://bit.ly/9AkjLC</a></li>
+<li>Using the console in IE: <a href="http://bit.ly/9MH2CZ">http://bit.ly/9MH2CZ</a></li>
+</ul>
+
+<p>I hope that you found something in this post useful.</p>
+
+<p>Hopefully next time your debugging that next piece of JavaScript you&rsquo;ll remember to use the console.</p>
+
+    </section>
+    <footer class="post-footer">
+      <section class="share">
+  <h4>Share this post -</h4>
+  <a class="twitter-share-link" href="http://twitter.com/share?text=Debugging%20JavaScript%20using%20Firebug%20%e2%80%93%20An%20alternative%20to%20alert%28%29%3b&url=https%3a%2f%2fwww.dannycroft.co.uk%2fdebugging-javascript%2f"
+    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">Twitter</a>
+  <a class="facebook-share-link" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fwww.dannycroft.co.uk%2fdebugging-javascript%2f"
+    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">Facebook</a>
+  <a class="google-plus-share-link" href="https://plus.google.com/share?url=https%3a%2f%2fwww.dannycroft.co.uk%2fdebugging-javascript%2f"
+    onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">Google Plus</a>
+</section>
+
+    </footer>
+    <section class="disqus-comments">
+      <h4>Leave a comment -</h4>
+      <div id="disqus_thread"></div>
+    </section>
+  </div>
+</article>
+<div class="author-bio">
+  <section class="author inner" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <img src="https://www.dannycroft.co.uk/img/linkedin.jpg" width="150px" height="150px" alt="Profile Image" />
+    <h4 itemprop="name">Danny Croft</h4>
+    <a href="http://github.com/dannycroft" class="author-website" itemprop="url" rel="author">http://github.com/dannycroft</a>
+    <p>Danny Croft is an open source developer that loves working with new technologies. Here he documents his thoughts and
+      shares items of interest.</p>
+  </section>
+</div>
+</main>
+
+<footer class="site-footer">
+  <div class="inner">
+    <div class="clear"></div>
+    <h1 class="blog-title-footer">
+      <a href="https://www.dannycroft.co.uk/%20">Danny Croft</a>
+    </h1>
+    <section class="copyright">All content &copy; 2018
+      <a href="/">Danny Croft</a> &bull; All rights reserved.</section>
+  </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/ga-lite/latest/ga-lite.min.js" async></script>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script>
+  function fadeHeader(e){var t=e.getBoundingClientRect();t.top>-545&&(e.style.opacity=t.top/1e3+1)}var galite=galite||{};galite.UA="UA-19963356-2",galite.anonymizeIp=!0,WebFont.load({google:{families:["Droid+Serif:400,700,400italic,700italic","Open+Sans:300,400,600,700,800"]}}),function(){!function(e,t,n){var i=!1,a=function(){i||(i=!0,requestAnimationFrame(function(){n.dispatchEvent(new CustomEvent(t)),i=!1}))};(n=n||window).addEventListener(e,a)}("scroll","optimizedScroll")}(),window.addEventListener("optimizedScroll",function(e){fadeHeader(document.getElementById("site-head-content"))}),0===document.body.className.indexOf("post-template")&&function(){var e=document.createElement("script");e.type="text/javascript",e.async=!0,e.src="//dannycroft.disqus.com/embed.js",(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(e)}();
+</script>
+
+</body>
+
+</html>
+

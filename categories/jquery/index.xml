@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jquery on Software Engineer made in Wales but working in Germany - Danny Croft</title>
+    <link>https://www.dannycroft.co.uk/categories/jquery/</link>
+    <description>Recent content in Jquery on Software Engineer made in Wales but working in Germany - Danny Croft</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 20 Mar 2011 16:16:50 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.dannycroft.co.uk/categories/jquery/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>JavaScript Gig Finder</title>
+      <link>https://www.dannycroft.co.uk/javascript-gig-finder/</link>
+      <pubDate>Sun, 20 Mar 2011 16:16:50 +0000</pubDate>
+      
+      <guid>https://www.dannycroft.co.uk/javascript-gig-finder/</guid>
+      <description>This week the guys at Songkick gave me access to their API. I had some spare time today to get to know it better and generally mess around with it.
+I decided that what I really could do with was a simple way of finding out what gigs and concerts are on near me. So using the data kindly provided by Songkick (thanks guys!) I went ahead and built just that.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript W3C Unicorn Bookmarklet</title>
+      <link>https://www.dannycroft.co.uk/javascript-w3c-unicorn-bookmarklet/</link>
+      <pubDate>Sun, 20 Feb 2011 19:59:20 +0000</pubDate>
+      
+      <guid>https://www.dannycroft.co.uk/javascript-w3c-unicorn-bookmarklet/</guid>
+      <description>I use the W3C Unicorn Validator for almost all my markup validation needs. However every time I need to validate something I almost always end up googling &amp;ldquo;W3C Unicorn&amp;rdquo;. Which I admit is still pretty fast, but I wanted to cut as much faff out of that process as possible.
+So today (as in just this minute), I made a JavaScript bookmarklet that will help me trim the fat as it were.</description>
+    </item>
+    
+    <item>
+      <title>Last.fm / SVG Chart Mashup</title>
+      <link>https://www.dannycroft.co.uk/last-fm-svg-chart-mashup/</link>
+      <pubDate>Thu, 17 Feb 2011 23:08:00 +0000</pubDate>
+      
+      <guid>https://www.dannycroft.co.uk/last-fm-svg-chart-mashup/</guid>
+      <description>I love JavaScript, SVG and Last.fm. So why not mix them all together to make a funky looking pie chart? Well I&amp;rsquo;ve done just that.
+Take a look: http://bit.ly/fYogdZ 
+You can grab a copy of all the code here: http://bit.ly/eJV0Ja (GitHub)</description>
+    </item>
+    
+    <item>
+      <title>Paul Irish: 10 Things I Learned from the jQuery Source</title>
+      <link>https://www.dannycroft.co.uk/10-from-jquery-source/</link>
+      <pubDate>Sat, 09 Oct 2010 11:07:00 +0000</pubDate>
+      
+      <guid>https://www.dannycroft.co.uk/10-from-jquery-source/</guid>
+      <description> It’s jQuery on the big screen. We’ll open the jQuery source and run through how the jQuery object works, covering self-executing anonymous functions as a global abatement technique, several interesting jQuery methods, internal jQuery paradigms, and hiddenhancements. You’ll learn JavaScript techniques you can apply to your own code, as well as the basic workings of jQuery itself. - Paul Irish
+  </description>
+    </item>
+    
+  </channel>
+</rss>

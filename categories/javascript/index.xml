@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Javascript on Software Engineer made in Wales but working in Germany - Danny Croft</title>
+    <link>https://www.dannycroft.co.uk/categories/javascript/</link>
+    <description>Recent content in Javascript on Software Engineer made in Wales but working in Germany - Danny Croft</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 20 Jul 2014 14:04:38 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.dannycroft.co.uk/categories/javascript/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>User Interface Algorithms</title>
+      <link>https://www.dannycroft.co.uk/user-interface-algorithms/</link>
+      <pubDate>Sun, 20 Jul 2014 14:04:38 +0000</pubDate>
+      
+      <guid>https://www.dannycroft.co.uk/user-interface-algorithms/</guid>
+      <description>Even something as simple as a dropdown menu or a bar graph can introduce usability problems. From a slide out menu disappearing when a user&amp;rsquo;s mouse moves a few pixels too far, to requiring NASA-like levels of precision to mouse over the right element, there are algorithms already implemented in Javascript to help us overcome these problems. If an algorithm is defined as &amp;ldquo;a step-by-step procedure for calculations&amp;rdquo;, let&amp;rsquo;s visually break down those steps for 2 different non-trivial algorithms and explore how these algorithms are applied to some standard &amp;amp; everyday user interface patterns.</description>
+    </item>
+    
+    <item>
+      <title>How to enable the Safari Debug Menu</title>
+      <link>https://www.dannycroft.co.uk/how-to-enable-the-safari-debug-menu/</link>
+      <pubDate>Thu, 21 Jun 2012 19:31:56 +0000</pubDate>
+      
+      <guid>https://www.dannycroft.co.uk/how-to-enable-the-safari-debug-menu/</guid>
+      <description>This past month I&amp;rsquo;ve encountered a few people that didn&amp;rsquo;t know about the Debug menu that is available in Safari. Granted, for most engineers it won&amp;rsquo;t be of any use, but for some it will be invaluable.
+ Open up the terminal (Mac OSX) Enter the following and hit enter: defaults write com.apple.Safari -IncludeInternalDebugMenu 1 Restart/Open Safari  Note: This can be undone by changing 1 to 0 in the above command followed by a restart of Safari.</description>
+    </item>
+    
+    <item>
+      <title>Javascript Development Workflow of 2013</title>
+      <link>https://www.dannycroft.co.uk/javascript-development-workflow-of-2013/</link>
+      <pubDate>Sat, 02 Jun 2012 10:10:51 +0000</pubDate>
+      
+      <guid>https://www.dannycroft.co.uk/javascript-development-workflow-of-2013/</guid>
+      <description>The past two years have given us a wealth of tools and editor innovation that makes developing web apps more fun and certainly more productive. Learn what a modern development workflow looks like, from editors and plugins, to authoring abstractions, testing and DVCS integration - Paul Irish
+ </description>
+    </item>
+    
+    <item>
+      <title>Web Developers&#39; Guide to Web Intents in Chrome</title>
+      <link>https://www.dannycroft.co.uk/web-developers-guide-to-web-intents-in-chrome/</link>
+      <pubDate>Wed, 16 May 2012 08:06:00 +0000</pubDate>
+      
+      <guid>https://www.dannycroft.co.uk/web-developers-guide-to-web-intents-in-chrome/</guid>
+      <description>Last year Google proposed the Web Intents API to help web applications integrate with one another with minimal effort. They have now enabled an experimental version of the API in the most recent stable version of Chrome.
+For more information on Web Intents and to see just how powerful they can be, check out the following links:
+ Web Developers&amp;rsquo; Guide to Web Intents in Chrome A brief introduction to Web Intents [YouTube] webintents.</description>
+    </item>
+    
+    <item>
+      <title>Front-end Integration Testing with JavaScript</title>
+      <link>https://www.dannycroft.co.uk/front-end-integration-testing-with-javascript/</link>
+      <pubDate>Mon, 07 May 2012 19:36:59 +0000</pubDate>
+      
+      <guid>https://www.dannycroft.co.uk/front-end-integration-testing-with-javascript/</guid>
+      <description>Update (20/09/2014): I&amp;rsquo;ve updated the following walkthrough because people are still using it. It was originally written back in 2012 and parts of it were really out of date e.g. almost all the installation process can now be replaced with &amp;ldquo;npm i -g casperjs phantomjs&amp;rdquo; (we have npm now, yay!). Give me a shout if something is still out of date. If you&amp;rsquo;ve commented (thank you &amp;lt;3) but your comments keep disappearing, that&amp;rsquo;s my bad and I&amp;rsquo;m sorry.</description>
+    </item>
+    
+    <item>
+      <title>DOM, HTML5, &amp; CSS3 Performance</title>
+      <link>https://www.dannycroft.co.uk/dom-html5-css3-performance/</link>
+      <pubDate>Fri, 02 Dec 2011 22:01:00 +0000</pubDate>
+      
+      <guid>https://www.dannycroft.co.uk/dom-html5-css3-performance/</guid>
+      <description>Paul Irish, from the Chrome Developer Relations team, walks through smart techniques to improve the performance of your app. He describes CSS reflows and how to avoid them, hardware accelerated CSS, animation optimization, web workers, benchmarking and build scripts.
+ Reflows, what they are and how to avoid them Hardware accelerated CSS, how to trigger it Letting the browser optimize animation for you with requestAnimationFrame Web Workers Benchmarking Build scripts   </description>
+    </item>
+    
+    <item>
+      <title>Become a Javascript Console Power-User</title>
+      <link>https://www.dannycroft.co.uk/become-a-javascript-console-power-user/</link>
+      <pubDate>Fri, 28 Oct 2011 20:37:00 +0000</pubDate>
+      
+      <guid>https://www.dannycroft.co.uk/become-a-javascript-console-power-user/</guid>
+      <description>Level up on the Javascript console in the Chrome DevTools. Look at XHR requests, learn console helper functions to monitor events or explore objects better. Paul Irish from the Chrome team gives you a rundown.
+ </description>
+    </item>
+    
+    <item>
+      <title>Chrome Developer Tools Cheat Sheet</title>
+      <link>https://www.dannycroft.co.uk/chrome-developer-tools-cheat-sheet/</link>
+      <pubDate>Tue, 17 May 2011 07:32:00 +0000</pubDate>
+      
+      <guid>https://www.dannycroft.co.uk/chrome-developer-tools-cheat-sheet/</guid>
+      <description>Great cheat sheet buy Boris Smus (@borismus), a frontend developer and creative technologist working on Google Chrome developer relations.</description>
+    </item>
+    
+    <item>
+      <title>Google I/O 2011: Learning to Love JavaScript</title>
+      <link>https://www.dannycroft.co.uk/google-io-2011-learning-to-love-javascript/</link>
+      <pubDate>Fri, 13 May 2011 07:24:00 +0000</pubDate>
+      
+      <guid>https://www.dannycroft.co.uk/google-io-2011-learning-to-love-javascript/</guid>
+      <description>JavaScript remains one of the most popular and important programming languages in history. Web Developer and Chrome Engineer Alex Russell exposes the timeless strengths of the JavaScript language and why it is a vital part of the open web platform. Come hear what&amp;rsquo;s next for the JavaScript standard and how to get the most out of the new features coming soon in V8 and Chrome.
+ </description>
+    </item>
+    
+    <item>
+      <title>Introduction to Backbone.js</title>
+      <link>https://www.dannycroft.co.uk/backbone-js-introduction/</link>
+      <pubDate>Thu, 31 Mar 2011 07:08:00 +0000</pubDate>
+      
+      <guid>https://www.dannycroft.co.uk/backbone-js-introduction/</guid>
+      <description>A brief introduction to Backbone by Thomas Gorissen.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Gig Finder</title>
+      <link>https://www.dannycroft.co.uk/javascript-gig-finder/</link>
+      <pubDate>Sun, 20 Mar 2011 16:16:50 +0000</pubDate>
+      
+      <guid>https://www.dannycroft.co.uk/javascript-gig-finder/</guid>
+      <description>This week the guys at Songkick gave me access to their API. I had some spare time today to get to know it better and generally mess around with it.
+I decided that what I really could do with was a simple way of finding out what gigs and concerts are on near me. So using the data kindly provided by Songkick (thanks guys!) I went ahead and built just that.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript W3C Unicorn Bookmarklet</title>
+      <link>https://www.dannycroft.co.uk/javascript-w3c-unicorn-bookmarklet/</link>
+      <pubDate>Sun, 20 Feb 2011 19:59:20 +0000</pubDate>
+      
+      <guid>https://www.dannycroft.co.uk/javascript-w3c-unicorn-bookmarklet/</guid>
+      <description>I use the W3C Unicorn Validator for almost all my markup validation needs. However every time I need to validate something I almost always end up googling &amp;ldquo;W3C Unicorn&amp;rdquo;. Which I admit is still pretty fast, but I wanted to cut as much faff out of that process as possible.
+So today (as in just this minute), I made a JavaScript bookmarklet that will help me trim the fat as it were.</description>
+    </item>
+    
+    <item>
+      <title>Last.fm / SVG Chart Mashup</title>
+      <link>https://www.dannycroft.co.uk/last-fm-svg-chart-mashup/</link>
+      <pubDate>Thu, 17 Feb 2011 23:08:00 +0000</pubDate>
+      
+      <guid>https://www.dannycroft.co.uk/last-fm-svg-chart-mashup/</guid>
+      <description>I love JavaScript, SVG and Last.fm. So why not mix them all together to make a funky looking pie chart? Well I&amp;rsquo;ve done just that.
+Take a look: http://bit.ly/fYogdZ 
+You can grab a copy of all the code here: http://bit.ly/eJV0Ja (GitHub)</description>
+    </item>
+    
+    <item>
+      <title>HTML5 Canvas - Fireworks</title>
+      <link>https://www.dannycroft.co.uk/html5-canvas-fireworks/</link>
+      <pubDate>Fri, 24 Dec 2010 18:32:00 +0000</pubDate>
+      
+      <guid>https://www.dannycroft.co.uk/html5-canvas-fireworks/</guid>
+      <description>After finally getting some free time (Christmas Eve). I decided to action some of the items I learnt at the Full Frontal conference in November.
+I&amp;rsquo;ve tested the demo in: (in order of performance)
+ Safari 5.0.3 Chrome 8.0.552 Firefox 3.6.13 Opera 10.10  Here&amp;rsquo;s what I came up with: http://bit.ly/gRYQkt
+You can download all the source files here: http://bit.ly/gUPpxI</description>
+    </item>
+    
+    <item>
+      <title>Google I/O 2010 – Google Chrome’s developer tools</title>
+      <link>https://www.dannycroft.co.uk/google-chromes-developer-tools/</link>
+      <pubDate>Thu, 14 Oct 2010 10:07:00 +0000</pubDate>
+      
+      <guid>https://www.dannycroft.co.uk/google-chromes-developer-tools/</guid>
+      <description>In this session we&#39;ll give an overview of Developer Tools for Google Chrome that is a part of the standard Chrome distribution. Chrome Developer Tools allow inspecting, debugging and tuning the web applications and many more. In addition to this overview we would like to share some implementation details of the Developer Tools features and call for your contribution.   </description>
+    </item>
+    
+    <item>
+      <title>Paul Irish: 10 Things I Learned from the jQuery Source</title>
+      <link>https://www.dannycroft.co.uk/10-from-jquery-source/</link>
+      <pubDate>Sat, 09 Oct 2010 11:07:00 +0000</pubDate>
+      
+      <guid>https://www.dannycroft.co.uk/10-from-jquery-source/</guid>
+      <description> It’s jQuery on the big screen. We’ll open the jQuery source and run through how the jQuery object works, covering self-executing anonymous functions as a global abatement technique, several interesting jQuery methods, internal jQuery paradigms, and hiddenhancements. You’ll learn JavaScript techniques you can apply to your own code, as well as the basic workings of jQuery itself. - Paul Irish
+  </description>
+    </item>
+    
+    <item>
+      <title>Debugging JavaScript using Firebug – An alternative to alert();</title>
+      <link>https://www.dannycroft.co.uk/debugging-javascript/</link>
+      <pubDate>Tue, 28 Sep 2010 16:22:30 +0000</pubDate>
+      
+      <guid>https://www.dannycroft.co.uk/debugging-javascript/</guid>
+      <description>So as you may already know, Firebug must be one of the most important tools a developer can have in their utility belt.
+The more I use Firebug, the more I realise that I&amp;rsquo;m not using it to its full potential. One of the most useful aspects of Firebug is its ability to help me debug code fast.
+It&amp;rsquo;s amazing how many developers out there have Firebug installed, but when debugging JavaScript always resort to using the alert(); function.</description>
+    </item>
+    
+  </channel>
+</rss>

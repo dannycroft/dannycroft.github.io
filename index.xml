@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Software Engineer made in Wales but working in Germany - Danny Croft</title>
+    <link>https://www.dannycroft.co.uk/</link>
+    <description>Recent content on Software Engineer made in Wales but working in Germany - Danny Croft</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 25 Apr 2016 09:23:22 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.dannycroft.co.uk/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Set default brightness on Ubuntu</title>
+      <link>https://www.dannycroft.co.uk/set-default-brightness-on-ubuntu/</link>
+      <pubDate>Mon, 25 Apr 2016 09:23:22 +0000</pubDate>
+      
+      <guid>https://www.dannycroft.co.uk/set-default-brightness-on-ubuntu/</guid>
+      <description>I use a Thinkpad laptop with Linux installed for most of my work these days. However, with Ubuntu 14.04, the brightness always resets to maximum when I restart. This gets annoying, especially if you boot your laptop up in a dark room.
+The easiest way I found to set my brightness was to use the xbacklight package:
+sudo apt-get install xbacklight
+Now you can set the brightness easily to a certain percentage via the command line: xbacklight -set 50</description>
+    </item>
+    
+    <item>
+      <title>List top level packages in NPM</title>
+      <link>https://www.dannycroft.co.uk/list-top-level-packages-in-npm/</link>
+      <pubDate>Tue, 15 Mar 2016 11:12:02 +0000</pubDate>
+      
+      <guid>https://www.dannycroft.co.uk/list-top-level-packages-in-npm/</guid>
+      <description>Global: npm ls -g --depth=0 2&amp;gt;/dev/null  Project: npm ls --depth=0 2&amp;gt;/dev/null
+You can drop the 2&amp;gt;/dev/null redirection but then you won&amp;rsquo;t get a cleaner list of packages. You will also get any NPM ERR! that currently exist.</description>
+    </item>
+    
+    <item>
+      <title>Kill timed out SSH sessions</title>
+      <link>https://www.dannycroft.co.uk/kill-timed-out-ssh-sessions/</link>
+      <pubDate>Sun, 28 Feb 2016 13:42:31 +0000</pubDate>
+      
+      <guid>https://www.dannycroft.co.uk/kill-timed-out-ssh-sessions/</guid>
+      <description>Press Enter , ~ , . one after the other to disconnect from a frozen session. Simple but effective.
+This works because these are escape sequences. Next time you SSH somewhere just type ~ and ? (tilde, then question mark) to see all the options.
+Supported escape sequences:
+~. - terminate connection (and any multiplexed sessions)
+~B - send a BREAK to the remote system
+~C - open a command line</description>
+    </item>
+    
+    <item>
+      <title>GIF screencasts (Ubuntu)</title>
+      <link>https://www.dannycroft.co.uk/short-screen-casting-with-gifs-ubuntu/</link>
+      <pubDate>Wed, 20 Jan 2016 11:14:29 +0000</pubDate>
+      
+      <guid>https://www.dannycroft.co.uk/short-screen-casting-with-gifs-ubuntu/</guid>
+      <description>To record short screencasts on Ubuntu I use byzanz. Byzanz is a desktop recorder and command line tool allowing you to record your current desktop or parts of it to an animated GIF, Ogg Theora, Flash or WebM.
+To install:
+sudo apt-get install byzanz
+To use: (with 5 second delay)
+byzanz-record --delay=5 --duration=10 --x=878 --width=722 --height=434 ~/Desktop/vim.gif
+or an alternative syntax: (using both X and Y)
+byzanz-record -d 10 -x 878 -y 200 -w 722 -h 434 ~/Desktop/vim.</description>
+    </item>
+    
+    <item>
+      <title>Improving battery life on a ThinkPad (Linux)</title>
+      <link>https://www.dannycroft.co.uk/saving-power-on-a-carbon-x1-ubuntu-14-04/</link>
+      <pubDate>Fri, 15 Jan 2016 16:34:50 +0000</pubDate>
+      
+      <guid>https://www.dannycroft.co.uk/saving-power-on-a-carbon-x1-ubuntu-14-04/</guid>
+      <description>I recently purchased a ThinkPad X1 Carbon laptop. My OS choice is Linux and Ubuntu 14.04 works flawlessly on this particular laptop.
+For a quick win when trying to get the most battery life out of a full charge install TLP.
+ TLP brings you the benefits of advanced power management for Linux without the need to understand every technical detail. TLP comes with a default configuration already optimized for battery life, so you may just install and forget it.</description>
+    </item>
+    
+    <item>
+      <title>Unapply a stash in Git</title>
+      <link>https://www.dannycroft.co.uk/unapply-a-stash-in-git/</link>
+      <pubDate>Mon, 29 Sep 2014 16:02:25 +0000</pubDate>
+      
+      <guid>https://www.dannycroft.co.uk/unapply-a-stash-in-git/</guid>
+      <description>Using Git and just applied the wrong stash? No worries, the following will help you.
+Unapply the last stash: → git stash show -p | git apply -R
+Unapply a specific stash: e.g. 0 in this case → git stash show -p stash@{0} | git apply -R</description>
+    </item>
+    
+    <item>
+      <title>Find process by port number</title>
+      <link>https://www.dannycroft.co.uk/find-process-by-port-number/</link>
+      <pubDate>Wed, 24 Sep 2014 06:44:34 +0000</pubDate>
+      
+      <guid>https://www.dannycroft.co.uk/find-process-by-port-number/</guid>
+      <description>My tmux session crashed, including a local server instance I was running. Now when I try to restart the server I get an error saying it&amp;rsquo;s still running? How do I kill it?
+ You probably already know what port you were using, so find what&amp;rsquo;s listening on that port, collect it&amp;rsquo;s PID and then kill it:
+Find the PID of what&amp;rsquo;s running on port 9292 using lsof: → lsof -i:9292 -t 58085</description>
+    </item>
+    
+    <item>
+      <title>User Interface Algorithms</title>
+      <link>https://www.dannycroft.co.uk/user-interface-algorithms/</link>
+      <pubDate>Sun, 20 Jul 2014 14:04:38 +0000</pubDate>
+      
+      <guid>https://www.dannycroft.co.uk/user-interface-algorithms/</guid>
+      <description>Even something as simple as a dropdown menu or a bar graph can introduce usability problems. From a slide out menu disappearing when a user&amp;rsquo;s mouse moves a few pixels too far, to requiring NASA-like levels of precision to mouse over the right element, there are algorithms already implemented in Javascript to help us overcome these problems. If an algorithm is defined as &amp;ldquo;a step-by-step procedure for calculations&amp;rdquo;, let&amp;rsquo;s visually break down those steps for 2 different non-trivial algorithms and explore how these algorithms are applied to some standard &amp;amp; everyday user interface patterns.</description>
+    </item>
+    
+    <item>
+      <title>Enabling Source Maps in Chrome</title>
+      <link>https://www.dannycroft.co.uk/enabling-source-maps-in-chrome/</link>
+      <pubDate>Sat, 22 Dec 2012 13:50:42 +0000</pubDate>
+      
+      <guid>https://www.dannycroft.co.uk/enabling-source-maps-in-chrome/</guid>
+      <description>Update: Google have now compiled a solid walkthrough that can be see here: Debugging JavaScript - Source Maps
+I&amp;rsquo;ve seen a couple of posts about enabling source map support, but never actually got it up and running. Below are the steps that I took to achieve this. I use Google Chrome in my development workflow and almost all of the time it&amp;rsquo;s the Canary variation. The (latest) version I&amp;rsquo;m currently using is &amp;ldquo;Version 26.</description>
+    </item>
+    
+    <item>
+      <title>How to enable the Safari Debug Menu</title>
+      <link>https://www.dannycroft.co.uk/how-to-enable-the-safari-debug-menu/</link>
+      <pubDate>Thu, 21 Jun 2012 19:31:56 +0000</pubDate>
+      
+      <guid>https://www.dannycroft.co.uk/how-to-enable-the-safari-debug-menu/</guid>
+      <description>This past month I&amp;rsquo;ve encountered a few people that didn&amp;rsquo;t know about the Debug menu that is available in Safari. Granted, for most engineers it won&amp;rsquo;t be of any use, but for some it will be invaluable.
+ Open up the terminal (Mac OSX) Enter the following and hit enter: defaults write com.apple.Safari -IncludeInternalDebugMenu 1 Restart/Open Safari  Note: This can be undone by changing 1 to 0 in the above command followed by a restart of Safari.</description>
+    </item>
+    
+    <item>
+      <title>Javascript Development Workflow of 2013</title>
+      <link>https://www.dannycroft.co.uk/javascript-development-workflow-of-2013/</link>
+      <pubDate>Sat, 02 Jun 2012 10:10:51 +0000</pubDate>
+      
+      <guid>https://www.dannycroft.co.uk/javascript-development-workflow-of-2013/</guid>
+      <description>The past two years have given us a wealth of tools and editor innovation that makes developing web apps more fun and certainly more productive. Learn what a modern development workflow looks like, from editors and plugins, to authoring abstractions, testing and DVCS integration - Paul Irish
+ </description>
+    </item>
+    
+    <item>
+      <title>Web Developers&#39; Guide to Web Intents in Chrome</title>
+      <link>https://www.dannycroft.co.uk/web-developers-guide-to-web-intents-in-chrome/</link>
+      <pubDate>Wed, 16 May 2012 08:06:00 +0000</pubDate>
+      
+      <guid>https://www.dannycroft.co.uk/web-developers-guide-to-web-intents-in-chrome/</guid>
+      <description>Last year Google proposed the Web Intents API to help web applications integrate with one another with minimal effort. They have now enabled an experimental version of the API in the most recent stable version of Chrome.
+For more information on Web Intents and to see just how powerful they can be, check out the following links:
+ Web Developers&amp;rsquo; Guide to Web Intents in Chrome A brief introduction to Web Intents [YouTube] webintents.</description>
+    </item>
+    
+    <item>
+      <title>Front-end Integration Testing with JavaScript</title>
+      <link>https://www.dannycroft.co.uk/front-end-integration-testing-with-javascript/</link>
+      <pubDate>Mon, 07 May 2012 19:36:59 +0000</pubDate>
+      
+      <guid>https://www.dannycroft.co.uk/front-end-integration-testing-with-javascript/</guid>
+      <description>Update (20/09/2014): I&amp;rsquo;ve updated the following walkthrough because people are still using it. It was originally written back in 2012 and parts of it were really out of date e.g. almost all the installation process can now be replaced with &amp;ldquo;npm i -g casperjs phantomjs&amp;rdquo; (we have npm now, yay!). Give me a shout if something is still out of date. If you&amp;rsquo;ve commented (thank you &amp;lt;3) but your comments keep disappearing, that&amp;rsquo;s my bad and I&amp;rsquo;m sorry.</description>
+    </item>
+    
+    <item>
+      <title>DOM, HTML5, &amp; CSS3 Performance</title>
+      <link>https://www.dannycroft.co.uk/dom-html5-css3-performance/</link>
+      <pubDate>Fri, 02 Dec 2011 22:01:00 +0000</pubDate>
+      
+      <guid>https://www.dannycroft.co.uk/dom-html5-css3-performance/</guid>
+      <description>Paul Irish, from the Chrome Developer Relations team, walks through smart techniques to improve the performance of your app. He describes CSS reflows and how to avoid them, hardware accelerated CSS, animation optimization, web workers, benchmarking and build scripts.
+ Reflows, what they are and how to avoid them Hardware accelerated CSS, how to trigger it Letting the browser optimize animation for you with requestAnimationFrame Web Workers Benchmarking Build scripts   </description>
+    </item>
+    
+    <item>
+      <title>Become a Javascript Console Power-User</title>
+      <link>https://www.dannycroft.co.uk/become-a-javascript-console-power-user/</link>
+      <pubDate>Fri, 28 Oct 2011 20:37:00 +0000</pubDate>
+      
+      <guid>https://www.dannycroft.co.uk/become-a-javascript-console-power-user/</guid>
+      <description>Level up on the Javascript console in the Chrome DevTools. Look at XHR requests, learn console helper functions to monitor events or explore objects better. Paul Irish from the Chrome team gives you a rundown.
+ </description>
+    </item>
+    
+    <item>
+      <title>Chrome Developer Tools Cheat Sheet</title>
+      <link>https://www.dannycroft.co.uk/chrome-developer-tools-cheat-sheet/</link>
+      <pubDate>Tue, 17 May 2011 07:32:00 +0000</pubDate>
+      
+      <guid>https://www.dannycroft.co.uk/chrome-developer-tools-cheat-sheet/</guid>
+      <description>Great cheat sheet buy Boris Smus (@borismus), a frontend developer and creative technologist working on Google Chrome developer relations.</description>
+    </item>
+    
+    <item>
+      <title>Google I/O 2011: Learning to Love JavaScript</title>
+      <link>https://www.dannycroft.co.uk/google-io-2011-learning-to-love-javascript/</link>
+      <pubDate>Fri, 13 May 2011 07:24:00 +0000</pubDate>
+      
+      <guid>https://www.dannycroft.co.uk/google-io-2011-learning-to-love-javascript/</guid>
+      <description>JavaScript remains one of the most popular and important programming languages in history. Web Developer and Chrome Engineer Alex Russell exposes the timeless strengths of the JavaScript language and why it is a vital part of the open web platform. Come hear what&amp;rsquo;s next for the JavaScript standard and how to get the most out of the new features coming soon in V8 and Chrome.
+ </description>
+    </item>
+    
+    <item>
+      <title>Introduction to Backbone.js</title>
+      <link>https://www.dannycroft.co.uk/backbone-js-introduction/</link>
+      <pubDate>Thu, 31 Mar 2011 07:08:00 +0000</pubDate>
+      
+      <guid>https://www.dannycroft.co.uk/backbone-js-introduction/</guid>
+      <description>A brief introduction to Backbone by Thomas Gorissen.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Gig Finder</title>
+      <link>https://www.dannycroft.co.uk/javascript-gig-finder/</link>
+      <pubDate>Sun, 20 Mar 2011 16:16:50 +0000</pubDate>
+      
+      <guid>https://www.dannycroft.co.uk/javascript-gig-finder/</guid>
+      <description>This week the guys at Songkick gave me access to their API. I had some spare time today to get to know it better and generally mess around with it.
+I decided that what I really could do with was a simple way of finding out what gigs and concerts are on near me. So using the data kindly provided by Songkick (thanks guys!) I went ahead and built just that.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript W3C Unicorn Bookmarklet</title>
+      <link>https://www.dannycroft.co.uk/javascript-w3c-unicorn-bookmarklet/</link>
+      <pubDate>Sun, 20 Feb 2011 19:59:20 +0000</pubDate>
+      
+      <guid>https://www.dannycroft.co.uk/javascript-w3c-unicorn-bookmarklet/</guid>
+      <description>I use the W3C Unicorn Validator for almost all my markup validation needs. However every time I need to validate something I almost always end up googling &amp;ldquo;W3C Unicorn&amp;rdquo;. Which I admit is still pretty fast, but I wanted to cut as much faff out of that process as possible.
+So today (as in just this minute), I made a JavaScript bookmarklet that will help me trim the fat as it were.</description>
+    </item>
+    
+    <item>
+      <title>Last.fm / SVG Chart Mashup</title>
+      <link>https://www.dannycroft.co.uk/last-fm-svg-chart-mashup/</link>
+      <pubDate>Thu, 17 Feb 2011 23:08:00 +0000</pubDate>
+      
+      <guid>https://www.dannycroft.co.uk/last-fm-svg-chart-mashup/</guid>
+      <description>I love JavaScript, SVG and Last.fm. So why not mix them all together to make a funky looking pie chart? Well I&amp;rsquo;ve done just that.
+Take a look: http://bit.ly/fYogdZ 
+You can grab a copy of all the code here: http://bit.ly/eJV0Ja (GitHub)</description>
+    </item>
+    
+    <item>
+      <title>HTML5 Canvas - Fireworks</title>
+      <link>https://www.dannycroft.co.uk/html5-canvas-fireworks/</link>
+      <pubDate>Fri, 24 Dec 2010 18:32:00 +0000</pubDate>
+      
+      <guid>https://www.dannycroft.co.uk/html5-canvas-fireworks/</guid>
+      <description>After finally getting some free time (Christmas Eve). I decided to action some of the items I learnt at the Full Frontal conference in November.
+I&amp;rsquo;ve tested the demo in: (in order of performance)
+ Safari 5.0.3 Chrome 8.0.552 Firefox 3.6.13 Opera 10.10  Here&amp;rsquo;s what I came up with: http://bit.ly/gRYQkt
+You can download all the source files here: http://bit.ly/gUPpxI</description>
+    </item>
+    
+    <item>
+      <title>Google I/O 2010 – Google Chrome’s developer tools</title>
+      <link>https://www.dannycroft.co.uk/google-chromes-developer-tools/</link>
+      <pubDate>Thu, 14 Oct 2010 10:07:00 +0000</pubDate>
+      
+      <guid>https://www.dannycroft.co.uk/google-chromes-developer-tools/</guid>
+      <description>In this session we&#39;ll give an overview of Developer Tools for Google Chrome that is a part of the standard Chrome distribution. Chrome Developer Tools allow inspecting, debugging and tuning the web applications and many more. In addition to this overview we would like to share some implementation details of the Developer Tools features and call for your contribution.   </description>
+    </item>
+    
+    <item>
+      <title>How do I detect memory leaks in my iPhone app using Xcode?</title>
+      <link>https://www.dannycroft.co.uk/detect-memory-leaks-xcode/</link>
+      <pubDate>Sat, 09 Oct 2010 13:02:00 +0000</pubDate>
+      
+      <guid>https://www.dannycroft.co.uk/detect-memory-leaks-xcode/</guid>
+      <description> Xcode: Run - Run with Performance Tool - Leaks  </description>
+    </item>
+    
+    <item>
+      <title>Paul Irish: 10 Things I Learned from the jQuery Source</title>
+      <link>https://www.dannycroft.co.uk/10-from-jquery-source/</link>
+      <pubDate>Sat, 09 Oct 2010 11:07:00 +0000</pubDate>
+      
+      <guid>https://www.dannycroft.co.uk/10-from-jquery-source/</guid>
+      <description> It’s jQuery on the big screen. We’ll open the jQuery source and run through how the jQuery object works, covering self-executing anonymous functions as a global abatement technique, several interesting jQuery methods, internal jQuery paradigms, and hiddenhancements. You’ll learn JavaScript techniques you can apply to your own code, as well as the basic workings of jQuery itself. - Paul Irish
+  </description>
+    </item>
+    
+    <item>
+      <title>Debugging JavaScript using Firebug – An alternative to alert();</title>
+      <link>https://www.dannycroft.co.uk/debugging-javascript/</link>
+      <pubDate>Tue, 28 Sep 2010 16:22:30 +0000</pubDate>
+      
+      <guid>https://www.dannycroft.co.uk/debugging-javascript/</guid>
+      <description>So as you may already know, Firebug must be one of the most important tools a developer can have in their utility belt.
+The more I use Firebug, the more I realise that I&amp;rsquo;m not using it to its full potential. One of the most useful aspects of Firebug is its ability to help me debug code fast.
+It&amp;rsquo;s amazing how many developers out there have Firebug installed, but when debugging JavaScript always resort to using the alert(); function.</description>
+    </item>
+    
+    <item>
+      <title>Custom User Stylesheets for Twitter</title>
+      <link>https://www.dannycroft.co.uk/custom-user-stylesheets-for-twitter/</link>
+      <pubDate>Mon, 27 Sep 2010 10:00:32 +0000</pubDate>
+      
+      <guid>https://www.dannycroft.co.uk/custom-user-stylesheets-for-twitter/</guid>
+      <description>After receiving access to the new Twitter interface, you might have been left thinking &amp;ldquo;I&amp;rsquo;m not keen on all the clutter down the right hand side&amp;rdquo;. Well there is a way to get rid of it. Look at the before and after shots below:
+
+
+Just follow these simple steps:
+Step 1
+Make sure you have Safari 5 and you have Safari Extensions enabled.
+Step 2
+Download and install the User CSS Manager .</description>
+    </item>
+    
+    <item>
+      <title>RBS Six Nations Rugby Calendar</title>
+      <link>https://www.dannycroft.co.uk/rbs-six-nations-rugby-calendar/</link>
+      <pubDate>Tue, 09 Feb 2010 09:47:40 +0000</pubDate>
+      
+      <guid>https://www.dannycroft.co.uk/rbs-six-nations-rugby-calendar/</guid>
+      <description>Update: RBS have now supplied a downloadable fixture list and you can access it here.
+I&amp;rsquo;m not much of a football fan, but I do love the rugby. Especially when I get to watch the finest players from Wales (being Welsh myself) play against the likes of England, Scotland, Ireland, France and Italy!
+The problem is, is that I always forget when the games I want to watch are on.</description>
+    </item>
+    
+    <item>
+      <title>Haiti Earthquake PayPal Donations</title>
+      <link>https://www.dannycroft.co.uk/haiti-earthquake-paypal-donations/</link>
+      <pubDate>Wed, 13 Jan 2010 10:09:03 +0000</pubDate>
+      
+      <guid>https://www.dannycroft.co.uk/haiti-earthquake-paypal-donations/</guid>
+      <description>Today, like many others I have been following the terrible aftermath of the Haiti Earthquake. After listening to a particularly hard hitting Radio 4 broadcast and learning that a massive array of charities around the world needed donations and support to help provide relief to Haiti, I hunted down the fastest way to make a donation.
+Being halfway through the daily commute to work I didn&amp;rsquo;t have my wallet on me, so I found it incredibly difficult to find a charity online that excepted donations for Haiti relief support via PayPal (PayPal have all my details stored online).</description>
+    </item>
+    
+    <item>
+      <title>Viewing .htaccess files in Transmit</title>
+      <link>https://www.dannycroft.co.uk/viewing-htaccess-files-in-transmit/</link>
+      <pubDate>Wed, 06 Jan 2010 21:05:41 +0000</pubDate>
+      
+      <guid>https://www.dannycroft.co.uk/viewing-htaccess-files-in-transmit/</guid>
+      <description>To view .htaccess (and other) hidden files in Transmit all you need to do is go to:
+View -&amp;gt; Show Invisible Files
+It&amp;rsquo;s that simple!</description>
+    </item>
+    
+    <item>
+      <title>Coda Books Collection</title>
+      <link>https://www.dannycroft.co.uk/coda-books-collection/</link>
+      <pubDate>Mon, 21 Dec 2009 10:57:25 +0000</pubDate>
+      
+      <guid>https://www.dannycroft.co.uk/coda-books-collection/</guid>
+      <description>You will no-doubt already know that Coda, the one-window web development application for MAC, has a unique feature called &amp;ldquo;Books&amp;rdquo;. This allows you to add reference books of your choice, that you can use to help you out when you forget that all important class or function.
+After a while of searching around the web for all the reference books I could get my hands on, I managed to accumulate 16 reference books.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Canvas on Software Engineer made in Wales but working in Germany - Danny Croft</title>
+    <link>https://www.dannycroft.co.uk/tags/canvas/</link>
+    <description>Recent content in Canvas on Software Engineer made in Wales but working in Germany - Danny Croft</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 24 Dec 2010 18:32:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.dannycroft.co.uk/tags/canvas/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>HTML5 Canvas - Fireworks</title>
+      <link>https://www.dannycroft.co.uk/html5-canvas-fireworks/</link>
+      <pubDate>Fri, 24 Dec 2010 18:32:00 +0000</pubDate>
+      
+      <guid>https://www.dannycroft.co.uk/html5-canvas-fireworks/</guid>
+      <description>After finally getting some free time (Christmas Eve). I decided to action some of the items I learnt at the Full Frontal conference in November.
+I&amp;rsquo;ve tested the demo in: (in order of performance)
+ Safari 5.0.3 Chrome 8.0.552 Firefox 3.6.13 Opera 10.10  Here&amp;rsquo;s what I came up with: http://bit.ly/gRYQkt
+You can download all the source files here: http://bit.ly/gUPpxI</description>
+    </item>
+    
+  </channel>
+</rss>

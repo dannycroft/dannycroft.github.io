@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Web Development on Software Engineer made in Wales but working in Germany - Danny Croft</title>
+    <link>https://www.dannycroft.co.uk/tags/web-development/</link>
+    <description>Recent content in Web Development on Software Engineer made in Wales but working in Germany - Danny Croft</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 21 Jun 2012 19:31:56 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.dannycroft.co.uk/tags/web-development/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to enable the Safari Debug Menu</title>
+      <link>https://www.dannycroft.co.uk/how-to-enable-the-safari-debug-menu/</link>
+      <pubDate>Thu, 21 Jun 2012 19:31:56 +0000</pubDate>
+      
+      <guid>https://www.dannycroft.co.uk/how-to-enable-the-safari-debug-menu/</guid>
+      <description>This past month I&amp;rsquo;ve encountered a few people that didn&amp;rsquo;t know about the Debug menu that is available in Safari. Granted, for most engineers it won&amp;rsquo;t be of any use, but for some it will be invaluable.
+ Open up the terminal (Mac OSX) Enter the following and hit enter: defaults write com.apple.Safari -IncludeInternalDebugMenu 1 Restart/Open Safari  Note: This can be undone by changing 1 to 0 in the above command followed by a restart of Safari.</description>
+    </item>
+    
+    <item>
+      <title>Web Developers&#39; Guide to Web Intents in Chrome</title>
+      <link>https://www.dannycroft.co.uk/web-developers-guide-to-web-intents-in-chrome/</link>
+      <pubDate>Wed, 16 May 2012 08:06:00 +0000</pubDate>
+      
+      <guid>https://www.dannycroft.co.uk/web-developers-guide-to-web-intents-in-chrome/</guid>
+      <description>Last year Google proposed the Web Intents API to help web applications integrate with one another with minimal effort. They have now enabled an experimental version of the API in the most recent stable version of Chrome.
+For more information on Web Intents and to see just how powerful they can be, check out the following links:
+ Web Developers&amp;rsquo; Guide to Web Intents in Chrome A brief introduction to Web Intents [YouTube] webintents.</description>
+    </item>
+    
+    <item>
+      <title>Front-end Integration Testing with JavaScript</title>
+      <link>https://www.dannycroft.co.uk/front-end-integration-testing-with-javascript/</link>
+      <pubDate>Mon, 07 May 2012 19:36:59 +0000</pubDate>
+      
+      <guid>https://www.dannycroft.co.uk/front-end-integration-testing-with-javascript/</guid>
+      <description>Update (20/09/2014): I&amp;rsquo;ve updated the following walkthrough because people are still using it. It was originally written back in 2012 and parts of it were really out of date e.g. almost all the installation process can now be replaced with &amp;ldquo;npm i -g casperjs phantomjs&amp;rdquo; (we have npm now, yay!). Give me a shout if something is still out of date. If you&amp;rsquo;ve commented (thank you &amp;lt;3) but your comments keep disappearing, that&amp;rsquo;s my bad and I&amp;rsquo;m sorry.</description>
+    </item>
+    
+  </channel>
+</rss>

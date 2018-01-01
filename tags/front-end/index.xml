@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Front End on Software Engineer made in Wales but working in Germany - Danny Croft</title>
+    <link>https://www.dannycroft.co.uk/tags/front-end/</link>
+    <description>Recent content in Front End on Software Engineer made in Wales but working in Germany - Danny Croft</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 20 Jul 2014 14:04:38 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.dannycroft.co.uk/tags/front-end/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>User Interface Algorithms</title>
+      <link>https://www.dannycroft.co.uk/user-interface-algorithms/</link>
+      <pubDate>Sun, 20 Jul 2014 14:04:38 +0000</pubDate>
+      
+      <guid>https://www.dannycroft.co.uk/user-interface-algorithms/</guid>
+      <description>Even something as simple as a dropdown menu or a bar graph can introduce usability problems. From a slide out menu disappearing when a user&amp;rsquo;s mouse moves a few pixels too far, to requiring NASA-like levels of precision to mouse over the right element, there are algorithms already implemented in Javascript to help us overcome these problems. If an algorithm is defined as &amp;ldquo;a step-by-step procedure for calculations&amp;rdquo;, let&amp;rsquo;s visually break down those steps for 2 different non-trivial algorithms and explore how these algorithms are applied to some standard &amp;amp; everyday user interface patterns.</description>
+    </item>
+    
+    <item>
+      <title>Javascript Development Workflow of 2013</title>
+      <link>https://www.dannycroft.co.uk/javascript-development-workflow-of-2013/</link>
+      <pubDate>Sat, 02 Jun 2012 10:10:51 +0000</pubDate>
+      
+      <guid>https://www.dannycroft.co.uk/javascript-development-workflow-of-2013/</guid>
+      <description>The past two years have given us a wealth of tools and editor innovation that makes developing web apps more fun and certainly more productive. Learn what a modern development workflow looks like, from editors and plugins, to authoring abstractions, testing and DVCS integration - Paul Irish
+ </description>
+    </item>
+    
+    <item>
+      <title>Front-end Integration Testing with JavaScript</title>
+      <link>https://www.dannycroft.co.uk/front-end-integration-testing-with-javascript/</link>
+      <pubDate>Mon, 07 May 2012 19:36:59 +0000</pubDate>
+      
+      <guid>https://www.dannycroft.co.uk/front-end-integration-testing-with-javascript/</guid>
+      <description>Update (20/09/2014): I&amp;rsquo;ve updated the following walkthrough because people are still using it. It was originally written back in 2012 and parts of it were really out of date e.g. almost all the installation process can now be replaced with &amp;ldquo;npm i -g casperjs phantomjs&amp;rdquo; (we have npm now, yay!). Give me a shout if something is still out of date. If you&amp;rsquo;ve commented (thank you &amp;lt;3) but your comments keep disappearing, that&amp;rsquo;s my bad and I&amp;rsquo;m sorry.</description>
+    </item>
+    
+  </channel>
+</rss>

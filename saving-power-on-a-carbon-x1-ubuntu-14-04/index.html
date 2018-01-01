@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    
+    <title>Improving battery life on a ThinkPad (Linux) </title>
+    <meta name="description" content="Improving battery life on a ThinkPad (Linux)">
+    
+    <meta name="handheldfriendly" content="true" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="shortcut icon" href="https://www.dannycroft.co.uk/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="https://www.dannycroft.co.uk/img/favicon.ico" type="image/x-icon">
+    <link rel="canonical" href="https://www.dannycroft.co.uk/saving-power-on-a-carbon-x1-ubuntu-14-04/" />
+    
+    <meta name="generator" content="Hugo 0.25.1" />
+    <meta name="google-site-verification" content="MblxogWb_KJhQFAkYEFB7AtAzm1yFCHHo_xwN7ucy0s" />
+    <link rel="stylesheet" href="https://www.dannycroft.co.uk/css/style.css" />
+</head>
+
+
+<body>
+  <aside class="hire-status">
+  <p>Status:
+    <a title="Currently not available" href="#">Unavailable for hire</a>
+  </p>
+</aside>
+
+
+  
+
+  
+  <header id="site-head-inner" style="background-image: url(https://www.dannycroft.co.uk/img/10333422.jpg)">
+    <div class="vertical">
+      <div id="site-head-content" class="inner">
+        <h1 class="blog-title"><a href="https://www.dannycroft.co.uk/">Danny Croft</a></h1>
+      </div>
+    </div>
+  </header>
+  
+
+  <main class="content" role="main">
+ 
+<article class="post-template post" itemscope="" itemtype="http://schema.org/BlogPosting">
+  <div class="inner">
+    <span class="post-meta">
+        <strong>Date: </strong>
+        <time class="post-date" datetime="2016-01-15T16:34:50Z">
+            Jan 15, 2016
+          </time>
+      </span>
+    <h1 class="post-title" itemprop="name headline">Improving battery life on a ThinkPad (Linux)</h1>
+    <section class="post-content" itemprop="articleBody">
+      <p>I recently purchased a <a href="http://shop.lenovo.com/us/en/laptops/thinkpad/x-series/x1-carbon/">ThinkPad X1 Carbon</a> laptop. My OS choice is Linux and Ubuntu 14.04 works flawlessly on this particular laptop.</p>
+
+<p>For a quick win when trying to get the most battery life out of a full charge install <a href="http://linrunner.de/en/tlp/docs/tlp-linux-advanced-power-management.html#installation">TLP</a>.</p>
+
+<blockquote>
+<p>TLP brings you the benefits of advanced power management for Linux without the need to understand every technical detail. TLP comes with a default configuration already optimized for battery life, so you may just install and forget it.</p>
+</blockquote>
+
+<p>Installation for most laptops:</p>
+
+<p><code>sudo add-apt-repository ppa:linrunner/tlp</code> <br>
+<code>sudo apt-get update</code> <br>
+<code>sudo apt-get install tlp tlp-rdw smartmontools ethtool</code></p>
+
+<p>ThinkPads, however, require additional tools:</p>
+
+<p><code>sudo apt-get install tp-smapi-dkms acpi-call-tools</code></p>
+
+<p>Update: <a href="https://www.dannycroft.co.uk/saving-power-on-a-carbon-x1-ubuntu-14-04/#comment-2977479170">Apparently</a> <code>acpi-call-tools</code> is now called <code>acpitool</code> so if the above fails try the updated name.</p>
+
+<p><strong>tlp-rdw</strong>: Radio Device Wizard - needed to enable/disable &amp; Power saving (Wifi / Bluetooth )</p>
+
+<p><strong>smartmontools</strong>: needed by tlp-stat to display disk drive S.M.A.R.T. data</p>
+
+<p><strong>ethtool</strong>: is needed to disable wake on LAN</p>
+
+<p><strong>tp-smapi-dkms</strong>: (ThinkPad only) is needed for battery charge thresholds and ThinkPad specific status output of tlp-stat</p>
+
+<p><strong>acpi-call-tools</strong>: (ThinkPad only) is needed for battery charge thresholds on Sandy Bridge and newer models</p>
+
+<p>If you also fancy being able to change your CPU frequency or profile &ldquo;on the fly&rdquo; then install the following:</p>
+
+<p><code>sudo apt-get install libcpufreq0 indicator-cpufreq</code></p>
+
+<p>Now logout and log back in. Look for the new indicator icon in your tool bar:</p>
+
+<p><img src="/assets/images/tpl-indicator.gif" alt="TLP Indicator" /></p>
+
+<p>Now you should have the option to choose between &ldquo;Performance&rdquo; or &ldquo;Powersave&rdquo;. You might have other options available, maybe a range of frequencies and more profiles to choose from. However, if you have a newer Intel processor, then Ubuntu will use new cpufreq driver called P-State. There are only two governors available for this driver.</p>
+
+<p>To verify these two modes are actually doing anything you can use proc:</p>
+
+<p><code>cat /proc/cpuinfo | grep &quot;MHz&quot;</code></p>
+
+<p>My processors on &ldquo;Powersave&rdquo; mode:</p>
+
+<p><img src="/assets/images/cpu-info-before.png" alt="Powersave" /></p>
+
+<p>And again with &ldquo;Performance&rdquo; mode:</p>
+
+<p><img src="/assets/images/cpu-info-after.png" alt="Performance Mode" /></p>
+
+<p>I&rsquo;m sure you can do way more with TLP, but for now I&rsquo;m happy with how much more battery life I&rsquo;m getting for very little effort. Thanks TLP and cpufreq.</p>
+
+    </section>
+    <footer class="post-footer">
+      <section class="share">
+  <h4>Share this post -</h4>
+  <a class="twitter-share-link" href="http://twitter.com/share?text=Improving%20battery%20life%20on%20a%20ThinkPad%20%28Linux%29&url=https%3a%2f%2fwww.dannycroft.co.uk%2fsaving-power-on-a-carbon-x1-ubuntu-14-04%2f"
+    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">Twitter</a>
+  <a class="facebook-share-link" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fwww.dannycroft.co.uk%2fsaving-power-on-a-carbon-x1-ubuntu-14-04%2f"
+    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">Facebook</a>
+  <a class="google-plus-share-link" href="https://plus.google.com/share?url=https%3a%2f%2fwww.dannycroft.co.uk%2fsaving-power-on-a-carbon-x1-ubuntu-14-04%2f"
+    onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">Google Plus</a>
+</section>
+
+    </footer>
+    <section class="disqus-comments">
+      <h4>Leave a comment -</h4>
+      <div id="disqus_thread"></div>
+    </section>
+  </div>
+</article>
+<div class="author-bio">
+  <section class="author inner" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <img src="https://www.dannycroft.co.uk/img/linkedin.jpg" width="150px" height="150px" alt="Profile Image" />
+    <h4 itemprop="name">Danny Croft</h4>
+    <a href="http://github.com/dannycroft" class="author-website" itemprop="url" rel="author">http://github.com/dannycroft</a>
+    <p>Danny Croft is an open source developer that loves working with new technologies. Here he documents his thoughts and
+      shares items of interest.</p>
+  </section>
+</div>
+</main>
+
+<footer class="site-footer">
+  <div class="inner">
+    <div class="clear"></div>
+    <h1 class="blog-title-footer">
+      <a href="https://www.dannycroft.co.uk/%20">Danny Croft</a>
+    </h1>
+    <section class="copyright">All content &copy; 2018
+      <a href="/">Danny Croft</a> &bull; All rights reserved.</section>
+  </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/ga-lite/latest/ga-lite.min.js" async></script>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script>
+  function fadeHeader(e){var t=e.getBoundingClientRect();t.top>-545&&(e.style.opacity=t.top/1e3+1)}var galite=galite||{};galite.UA="UA-19963356-2",galite.anonymizeIp=!0,WebFont.load({google:{families:["Droid+Serif:400,700,400italic,700italic","Open+Sans:300,400,600,700,800"]}}),function(){!function(e,t,n){var i=!1,a=function(){i||(i=!0,requestAnimationFrame(function(){n.dispatchEvent(new CustomEvent(t)),i=!1}))};(n=n||window).addEventListener(e,a)}("scroll","optimizedScroll")}(),window.addEventListener("optimizedScroll",function(e){fadeHeader(document.getElementById("site-head-content"))}),0===document.body.className.indexOf("post-template")&&function(){var e=document.createElement("script");e.type="text/javascript",e.async=!0,e.src="//dannycroft.disqus.com/embed.js",(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(e)}();
+</script>
+
+</body>
+
+</html>
+

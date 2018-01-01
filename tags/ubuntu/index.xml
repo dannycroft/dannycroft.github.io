@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ubuntu on Software Engineer made in Wales but working in Germany - Danny Croft</title>
+    <link>https://www.dannycroft.co.uk/tags/ubuntu/</link>
+    <description>Recent content in Ubuntu on Software Engineer made in Wales but working in Germany - Danny Croft</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 20 Jan 2016 11:14:29 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.dannycroft.co.uk/tags/ubuntu/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>GIF screencasts (Ubuntu)</title>
+      <link>https://www.dannycroft.co.uk/short-screen-casting-with-gifs-ubuntu/</link>
+      <pubDate>Wed, 20 Jan 2016 11:14:29 +0000</pubDate>
+      
+      <guid>https://www.dannycroft.co.uk/short-screen-casting-with-gifs-ubuntu/</guid>
+      <description>To record short screencasts on Ubuntu I use byzanz. Byzanz is a desktop recorder and command line tool allowing you to record your current desktop or parts of it to an animated GIF, Ogg Theora, Flash or WebM.
+To install:
+sudo apt-get install byzanz
+To use: (with 5 second delay)
+byzanz-record --delay=5 --duration=10 --x=878 --width=722 --height=434 ~/Desktop/vim.gif
+or an alternative syntax: (using both X and Y)
+byzanz-record -d 10 -x 878 -y 200 -w 722 -h 434 ~/Desktop/vim.</description>
+    </item>
+    
+    <item>
+      <title>Improving battery life on a ThinkPad (Linux)</title>
+      <link>https://www.dannycroft.co.uk/saving-power-on-a-carbon-x1-ubuntu-14-04/</link>
+      <pubDate>Fri, 15 Jan 2016 16:34:50 +0000</pubDate>
+      
+      <guid>https://www.dannycroft.co.uk/saving-power-on-a-carbon-x1-ubuntu-14-04/</guid>
+      <description>I recently purchased a ThinkPad X1 Carbon laptop. My OS choice is Linux and Ubuntu 14.04 works flawlessly on this particular laptop.
+For a quick win when trying to get the most battery life out of a full charge install TLP.
+ TLP brings you the benefits of advanced power management for Linux without the need to understand every technical detail. TLP comes with a default configuration already optimized for battery life, so you may just install and forget it.</description>
+    </item>
+    
+  </channel>
+</rss>
