@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Last.fm on Software Engineer made in Wales but working in Germany - Danny Croft</title>
+    <link>https://www.dannycroft.co.uk/tag/last.fm/</link>
+    <description>Recent content in Last.fm on Software Engineer made in Wales but working in Germany - Danny Croft</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 17 Feb 2011 23:08:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.dannycroft.co.uk/tag/last.fm/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Last.fm / SVG Chart Mashup</title>
+      <link>https://www.dannycroft.co.uk/last-fm-svg-chart-mashup/</link>
+      <pubDate>Thu, 17 Feb 2011 23:08:00 +0000</pubDate>
+      
+      <guid>https://www.dannycroft.co.uk/last-fm-svg-chart-mashup/</guid>
+      <description>I love JavaScript, SVG and Last.fm. So why not mix them all together to make a funky looking pie chart? Well I&amp;rsquo;ve done just that.
+Take a look: http://bit.ly/fYogdZ 
+You can grab a copy of all the code here: http://bit.ly/eJV0Ja (GitHub)</description>
+    </item>
+    
+  </channel>
+</rss>

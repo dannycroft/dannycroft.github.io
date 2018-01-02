@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Firefox on Software Engineer made in Wales but working in Germany - Danny Croft</title>
+    <link>https://www.dannycroft.co.uk/tag/firefox/</link>
+    <description>Recent content in Firefox on Software Engineer made in Wales but working in Germany - Danny Croft</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 28 Sep 2010 16:22:30 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.dannycroft.co.uk/tag/firefox/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Debugging JavaScript using Firebug – An alternative to alert();</title>
+      <link>https://www.dannycroft.co.uk/debugging-javascript/</link>
+      <pubDate>Tue, 28 Sep 2010 16:22:30 +0000</pubDate>
+      
+      <guid>https://www.dannycroft.co.uk/debugging-javascript/</guid>
+      <description>So as you may already know, Firebug must be one of the most important tools a developer can have in their utility belt.
+The more I use Firebug, the more I realise that I&amp;rsquo;m not using it to its full potential. One of the most useful aspects of Firebug is its ability to help me debug code fast.
+It&amp;rsquo;s amazing how many developers out there have Firebug installed, but when debugging JavaScript always resort to using the alert(); function.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Music on Software Engineer made in Wales but working in Germany - Danny Croft</title>
+    <link>https://www.dannycroft.co.uk/tag/music/</link>
+    <description>Recent content in Music on Software Engineer made in Wales but working in Germany - Danny Croft</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 20 Mar 2011 16:16:50 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.dannycroft.co.uk/tag/music/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>JavaScript Gig Finder</title>
+      <link>https://www.dannycroft.co.uk/javascript-gig-finder/</link>
+      <pubDate>Sun, 20 Mar 2011 16:16:50 +0000</pubDate>
+      
+      <guid>https://www.dannycroft.co.uk/javascript-gig-finder/</guid>
+      <description>This week the guys at Songkick gave me access to their API. I had some spare time today to get to know it better and generally mess around with it.
+I decided that what I really could do with was a simple way of finding out what gigs and concerts are on near me. So using the data kindly provided by Songkick (thanks guys!) I went ahead and built just that.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript W3C Unicorn Bookmarklet</title>
+      <link>https://www.dannycroft.co.uk/javascript-w3c-unicorn-bookmarklet/</link>
+      <pubDate>Sun, 20 Feb 2011 19:59:20 +0000</pubDate>
+      
+      <guid>https://www.dannycroft.co.uk/javascript-w3c-unicorn-bookmarklet/</guid>
+      <description>I use the W3C Unicorn Validator for almost all my markup validation needs. However every time I need to validate something I almost always end up googling &amp;ldquo;W3C Unicorn&amp;rdquo;. Which I admit is still pretty fast, but I wanted to cut as much faff out of that process as possible.
+So today (as in just this minute), I made a JavaScript bookmarklet that will help me trim the fat as it were.</description>
+    </item>
+    
+  </channel>
+</rss>
