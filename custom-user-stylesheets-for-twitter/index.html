@@ -118,7 +118,6 @@
   </section>
 </div>
 </main>
-
 <footer class="site-footer">
   <div class="inner">
     <div class="clear"></div>
@@ -130,13 +129,30 @@
   </div>
 </footer>
 
-
-<script src="https://cdn.jsdelivr.net/ga-lite/latest/ga-lite.min.js" async></script>
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
 <script>
-  function fadeHeader(e){var t=e.getBoundingClientRect();t.top>-545&&(e.style.opacity=t.top/1e3+1)}var galite=galite||{};galite.UA="UA-19963356-2",galite.anonymizeIp=!0,WebFont.load({google:{families:["Droid+Serif:400,700,400italic,700italic","Open+Sans:300,400,600,700,800"]}}),function(){!function(e,t,n){var i=!1,a=function(){i||(i=!0,requestAnimationFrame(function(){n.dispatchEvent(new CustomEvent(t)),i=!1}))};(n=n||window).addEventListener(e,a)}("scroll","optimizedScroll")}(),window.addEventListener("optimizedScroll",function(e){fadeHeader(document.getElementById("site-head-content"))}),0===document.body.className.indexOf("post-template")&&function(){var e=document.createElement("script");e.type="text/javascript",e.async=!0,e.src="//dannycroft.disqus.com/embed.js",(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(e)}();
-</script>
+  (function(e,t,n,i,s,a,c){e[n]=e[n]||function(){(e[n].q=e[n].q||[]).push(arguments)}
+    ;a=t.createElement(i);c=t.getElementsByTagName(i)[0];a.async=true;a.src=s
+    ;c.parentNode.insertBefore(a,c)
+  })(window,document,"galite","script","https://cdn.jsdelivr.net/npm/ga-lite@2/dist/ga-lite.min.js");
 
+  (function() {
+    if (document.getElementById('disqus_thread')) {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//dannycroft.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }
+  })();
+
+  galite('create', 'UA-19963356-2', 'auto');
+  galite('send', 'pageview');
+
+  WebFont.load({
+    google: {
+      families: ["Droid+Serif:400,700,400italic,700italic", "Open+Sans:300,400,600,700,800"]
+    }
+  });
+</script>
 </body>
 
 </html>
